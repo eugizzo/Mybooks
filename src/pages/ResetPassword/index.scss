@@ -1,0 +1,86 @@
+.reset-pwd-wrapper {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .form-main-wrapper {
+    // border: 2px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+
+    .text-wrapper {
+      flex-basis: 60%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      row-gap: 2.5em;
+
+      h3 {
+        font-size: 2em;
+        letter-spacing: 2px;
+      }
+    }
+
+    .email-form-wrapper {
+      border: 1px solid rgb(218, 218, 218);
+      padding: 4em 2em;
+      border-radius: 7px;
+      box-shadow: 2px 2px 4px rgb(218, 218, 218);
+      flex-basis: 40%;
+
+      .reset-button {
+        background: #a288e3;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .reset-button:hover {
+        background: #ad94ec;
+      }
+    }
+
+    .forgot-pwd-icon {
+      width: 20vw;
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .reset-pwd-wrapper {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .form-main-wrapper {
+      flex-direction: column;
+      width: 80%;
+
+      .text-wrapper {
+        row-gap: 2em;
+
+        h3 {
+          font-size: 1.5em;
+          letter-spacing: 2px;
+        }
+      }
+
+      .email-form-wrapper {
+        border: unset;
+        padding: unset;
+        border-radius: unset;
+        box-shadow: unset;
+      }
+
+      .forgot-pwd-icon {
+        width: 40vw;
+      }
+    }
+  }
+}

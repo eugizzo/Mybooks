@@ -8,6 +8,7 @@ import SignUp from "./pages/SignUp";
 import NotFound from "./pages/NotFound";
 import "./index.scss";
 import "./index.css";
+import ResetPassword from "./pages/ResetPassword";
 
 const App = () => (
   <ChakraProvider theme={theme}>
@@ -16,6 +17,7 @@ const App = () => (
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="/reset-password" element={<ResetPassword />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>

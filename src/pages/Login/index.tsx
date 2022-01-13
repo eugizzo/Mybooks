@@ -3,11 +3,18 @@ import LoginImg from "./assets/login-img.svg";
 import Logo from "../../assets/logo.svg";
 import "./index.scss";
 import { Link } from "react-router-dom";
+import { Text } from "@chakra-ui/react";
 
 const Login = () => (
   <main className="login-wrapper">
     <div className="login-form">
-      <form className="mt-8 space-y-6" action="#" method="POST">
+      <form className="space-y-6" method="POST">
+        <Text className="form-header-wrapper">
+          <div>Log in to</div>
+          <div>
+            <img className="logo" src={Logo} alt="logo" />
+          </div>
+        </Text>
         <input type="hidden" name="remember" value="True" />
         <div className="rounded-md shadow-sm -space-y-px">
           <div>
@@ -34,20 +41,14 @@ const Login = () => (
           </div>
         </div>
 
-        <div className="flex items-center justify-between">
-          <div className="flex items-center">
-            <input
-              id="remember_me"
-              name="remember_me"
-              type="checkbox"
-              className="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded"
-            />
-            <label
-              htmlFor="remember_me"
-              className="ml-2 block text-sm text-gray-900"
-            >
-              Remember me
-            </label>
+        <div className="login-functions-wrapper">
+          <div className="flex remember-me-wrapper">
+            <div>
+              <input id="remember_me" name="remember_me" type="checkbox" />
+            </div>
+            <div>
+              <label htmlFor="remember_me">Remember me</label>
+            </div>
           </div>
 
           <div className="text-sm">
