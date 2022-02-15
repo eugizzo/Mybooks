@@ -1,0 +1,9 @@
+.photopatrick{
+    border-radius: 15%;
+}
+
+@media  (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }

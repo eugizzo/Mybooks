@@ -1,6 +1,7 @@
 import React from "react";
 import LoginImg from "./assets/login-img.svg";
-import Logo from "../../assets/logo.svg";
+// import Logo from "../../assets/logo.svg";
+import Logo from "../../assets/img/headerlogo.png";
 import "./index.scss";
 import { Link } from "react-router-dom";
 import { Text } from "@chakra-ui/react";
@@ -10,9 +11,8 @@ const Login = () => (
     <div className="login-form">
       <form className="space-y-6" method="POST">
         <Text className="form-header-wrapper">
-          <div>Log in to</div>
           <div>
-            <img className="logo" src={Logo} alt="logo" />
+          <span className="ml-4 -mt-4 z-10 flex"><img style={{width:"30%"}}src={Logo}/><h1 className="-ml-8 text-4xl text-blue-800 font-mono pt-8 text-bold  z-20">MY BOOKS </h1></span>
           </div>
         </Text>
         <input type="hidden" name="remember" value="True" />
